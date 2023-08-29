@@ -1,0 +1,42 @@
+{
+  "name": "nekoding/saucenao-php",
+  "description": "PHP wrapper for SauceNAO's API ",
+  "keywords": [
+    "nekoding",
+    "saucenao-php"
+  ],
+  "homepage": "https://github.com/nekoding/saucenao-php",
+  "license": "GPL-2.0-or-later",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Enggar Tivandi",
+      "email": "enggartivandi.id@outlook.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0|^8.1|^8.2"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.6",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nekoding\\Saucenao\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Nekoding\\Saucenao\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
